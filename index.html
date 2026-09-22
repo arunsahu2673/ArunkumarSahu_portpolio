@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Kumar Sahu | Data Analyst Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-light); color: var(--text-color); line-height: 1.6; }
+        header { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); color: white; text-align: center; padding: 5rem 1rem; }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 1.5rem; }
+        .contact-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+        .contact-links a { color: white; text-decoration: none; font-weight: 500; background: rgba(255, 255, 255, 0.1); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.3s; }
+        .contact-links a:hover { background: rgba(255, 255, 255, 0.2); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 1rem; }
+        section { margin-bottom: 3rem; }
+        h2 { color: #1e3a8a; border-bottom: 3px solid var(--primary-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem; font-size: 1.8rem; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+        .skill-card { background: var(--card-bg); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid var(--border-color); }
+        .skill-card h3 { color: var(--primary-color); margin-bottom: 0.5rem; }
+        .skill-card ul { list-style-type: none; }
+        .skill-card li { margin-bottom: 0.25rem; font-size: 0.95rem; }
+        .project-card { background: var(--card-bg); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid var(--border-color); margin-bottom: 1.5rem; }
+        .project-card h3 { color: #1e3a8a; margin-bottom: 0.5rem; }
+        .project-tech { font-size: 0.9rem; color: var(--primary-color); font-weight: 600; margin-bottom: 1rem; }
+        .project-card ul { margin-left: 1.5rem; margin-bottom: 1.5rem; }
+        .btn { display: inline-block; background: var(--primary-color); color: white; text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 4px; font-weight: 500; transition: background 0.3s; }
+        .btn:hover { background: var(--secondary-color); }
+        .edu-cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        @media (max-width: 768px) { .edu-cert-grid { grid-template-columns: 1fr; } }
+        footer { text-align: center; padding: 2rem; background: #1e2937; color: white; margin-top: 4rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arun Kumar Sahu</h1>
+        <p>Data Analyst | Computer Science Engineering Graduate</p>
+        <div class="contact-links">
+            <a href="mailto:arunsahu2672@gmail.com">📧 Email</a>
+            <a href="tel:+919993190821">📱 +91 99931 90821</a>
+            <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+            <a href="https://github.com/arunsahu2673" target="_blank">💻 GitHub</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Data-driven and detail-oriented Computer Science Engineering Graduate specializing in Data Analytics. I possess a strong fundamental understanding of data extraction, cleaning, and insight generation using core analytics tools. Capable of creating interactive dashboards to help businesses make informed decisions.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Python (Pandas, NumPy)</li>
+                        <li>SQL</li>
+                        <li>Matplotlib, Seaborn</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Visualization</h3>
+                    <ul>
+                        <li>Power BI</li>
+                        <li>Dashboard Design</li>
+                        <li>Data Modeling</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Spreadsheets</h3>
+                    <ul>
+                        <li>Advanced Excel</li>
+                        <li>Pivot Tables</li>
+                        <li>VLOOKUP / XLOOKUP</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Competencies</h3>
+                    <ul>
+                        <li>Data Cleaning</li>
+                        <li>Exploratory Data Analysis</li>
+                        <li>Relational Databases</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="project-card">
+                <h3>Netflix Data Analysis & Exploratory Analytics</h3>
+                <div class="project-tech">Python | Pandas | Jupyter Notebook | Excel</div>
+                <ul>
+                    <li>Performed comprehensive Exploratory Data Analysis (EDA) on Netflix titles dataset to identify content trends.</li>
+                    <li>Cleaned raw text datasets by successfully handling missing fields, fixing data types, and filtering messy metadata.</li>
+                    <li>Wrote efficient data aggregation scripts utilizing Python and exported subsets to Excel for dynamic visualization check-points.</li>
+                    <li>Discovered underperforming content clusters and presented clear, actionable audience insights.</li>
+                </ul>
+                <a href="https://github.com" class="btn" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>E-Commerce Sales Performance Dashboard</h3>
+                <div class="project-tech">Python (Pandas) | Power BI</div>
+                <ul>
+                    <li>Extracted and cleaned high-volume e-commerce sales datasets containing thousands of records by standardizing missing values.</li>
+                    <li>Imported structured tables into Power BI, establishing robust data models and relationships for accurate cross-table calculations.</li>
+                    <li>Designed an interactive dashboard tracking vital executive business KPIs including MoM revenue growth and regional performance.</li>
+                </ul>
+                <a href="https://github.com" class="btn" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+
+        <section class="edu-cert-grid">
+            <div>
+                <h2>Education</h2>
+                <div class="project-card" style="padding: 1.5rem; margin-bottom: 0;">
+                    <h3>B.E. / B.Tech in CSE</h3>
+                    <p><strong>Jiwaji University, Gwalior</strong></p>
+                    <p>CGPA: 8.0/10.0 | 2022 - 2026</p>
+                </div>
+            </div>
+            <div>
+                <h2>Certifications</h2>
+                <div class="project-card" style="padding: 1.5rem; margin-bottom: 0;">
+                    <h3>Data Analytics Certification</h3>
+                    <p>Focused on SQL, Python, Excel, and Power BI</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Arun Kumar Sahu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
